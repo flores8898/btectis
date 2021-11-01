@@ -37,3 +37,5 @@ Route::get('/convocatoria', function () {
 Route::get('/registro', function () {
     return view('registro');
 });
+Route::get('formBootstrap', [FormController::class, 'index']);
+Route::post('guardar', [FormController::class, 'guardar']);
